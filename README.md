@@ -12,7 +12,7 @@ The database will contain at least 8 entities
 
 Generation from numbers and letters of the Latin alphabet, uppercase and lowercase (62 characters). The code will contain 5 characters.
 
-Step 3: Creating a trigger to check the student's TIN.
+3: Creating a trigger to check the student's TIN.
 
 4: Creating a trigger to check the student's SNILS.
 
