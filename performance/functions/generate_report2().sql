@@ -1,0 +1,25 @@
+-- FUNCTION: public.generate_report2()
+
+-- DROP FUNCTION IF EXISTS public.generate_report2();
+
+CREATE OR REPLACE FUNCTION public.generate_report2(
+	)
+    RETURNS TABLE(subject_name character varying, average_mark numeric, average_points numeric) 
+    LANGUAGE 'plpgsql'
+    COST 100
+    VOLATILE PARALLEL UNSAFE
+    ROWS 1000
+
+AS $BODY$
+BEGIN
+    RETURN QUERY
+    SELECT s.name AS subject_name, AVG(p.mark) AS average_mark, AVG(p.points_sem + p.points_exam) AS average_points
+    FROM perfomance p
+    INNER JOIN report r ON p.fk_report = r.id
+    INNER JOIN subject s ON r.fk_subject = s.id
+    GROUP BY s.name;
+END;
+$BODY$;
+
+ALTER FUNCTION public.generate_report2()
+    OWNER TO postgres;
