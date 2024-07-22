@@ -1,39 +1,39 @@
 # Postgres
 
-The academic performance database was created within the discipline of the same name. It contains key scripts such as tables, triggers, functions, and sequences.
+База данных успеваемости создана в рамках одноименной дисциплины. Она содержит ключевые скрипты, такие как таблицы, триггеры, функции и последовательности.
 
-The tasks for creating the database were as follows
+Задачи по созданию базы данных были следующими
 
-1: Development and coordination of the logical database scheme for the implementation of the project "Accounting for student progress".
+1. Разработка и согласование логической схемы базы данных для реализации проекта «Учет успеваемости студентов».
 
-The database will contain at least 8 entities
+База данных будет содержать не менее 8 сущностей
 
-2: Creating a built-in function for generating a primary key using a system table describing database objects.
+2. Создание встроенной функции для формирования первичного ключа с использованием системной таблицы, описывающей объекты базы данных.
 
-Generation from numbers and letters of the Latin alphabet, uppercase and lowercase (62 characters). The code will contain 5 characters.
+Формирование из цифр и букв латинского алфавита, заглавных и строчных (62 символа). Код будет содержать 5 символов.
 
-3: Creating a trigger to check the student's TIN.
+3. Создание триггера для проверки ИНН студента.
 
-4: Creating a trigger to check the student's SNILS.
+4. Создание триггера для проверки СНИЛС студента.
 
-5: Introduction of a protocol for changing data in the database in the context of a table and a field, fixing the old value of the field and the new one, and indicating which user made the changes, the time of the change and the date, the type of change (deletion, addition, change).
+5. Внедрение протокола изменения данных в базе данных в разрезе таблицы и поля, фиксация старого значения поля и нового, указание пользователя, внесшего изменения, времени и даты изменения, типа изменения (удаление, добавление, изменение).
 
-Step 6: Create a reporting function.
+Шаг 6: Создать функцию отчетности.
 
-Task: to create an information system for recording student progress.
+Задача: создать информационную систему учета успеваемости учащихся.
 
-It is necessary to provide the ability to enter the specified statement, and receive the following reports:
+Необходимо предоставить возможность ввода указанного заявления, и получения следующих отчетов:
 
-1. The average student's grade in the context of final grades and points.
+1. Средний балл учащегося в разрезе итоговых оценок и баллов.
 
-2. The average grade in the subject in the context of final grades and points.
+2. Средний балл по предмету в разрезе итоговых оценок и баллов.
 
-3. The average grade score for the teacher in the context of final grades and points.
+3. Средний балл преподавателя в разрезе итоговых оценок и баллов.
 
-4. The average score of the department leading the subjects in the context of final grades and points.
+4. Средний балл кафедры, ведущей предметы, в разрезе итоговых оценок и баллов.
 
-5. The average grade for the city of residence of students in the context of final grades and points.
+5. Средний балл по городу проживания учащихся в разрезе итоговых оценок и баллов.
 
-6. The average grade for the school that the student graduated from in the context of final grades and points.
+6. Средний балл по школе, которую окончил учащийся, в разрезе итоговых оценок и баллов.
 
-7. The final sheet of grades and points for the student in the context of subjects for a different period.
+7. Итоговая ведомость оценок и баллов учащегося в разрезе предметов за разный период.
